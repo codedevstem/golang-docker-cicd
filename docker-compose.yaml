@@ -1,0 +1,9 @@
+version: '3.6'
+services:
+  golang-docker-cicd:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: golang-docker-cicd
+    ports:
+      - 10000:10000
